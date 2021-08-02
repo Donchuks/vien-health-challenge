@@ -38,7 +38,7 @@ class CountryListViewController: UIViewController, UITableViewDataSource, UITabl
                 return
             }
             self.fetchCountries() //fetch countries
-            self.countries?.sort(by: {$0.name ?? "" < $1.name ?? ""}) //sort coutries
+            self.countries?.sort(by: {$0.name ?? "" < $1.name ?? ""}) //sort coutries by name
             self.countryTableView.reloadData()
         }
     }
